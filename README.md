@@ -1,6 +1,4 @@
-# frontend-final-test
-
-Documento extraído del material del curso de Java Full Stack AIEP - 2019 - 2020.
+# frontend-final-test: ARCEUS
 
 ## La Pokédex
 <img height="100" width="100" src="https://raw.githubusercontent.com/elrerag/front-final-test-arceus/master/assets/img/Pokedex_tool_icon-icons.com_67529.png"
