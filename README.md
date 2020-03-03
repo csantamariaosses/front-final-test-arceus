@@ -3,7 +3,7 @@
 Documento extraído del material del curso de Java Full Stack AIEP - 2019 - 2020.
 
 ## La Pokédex
-<img height="100" width="100" src="https://raw.githubusercontent.com/elrerag/frontend-final-test/master/assets/img/Pokedex_tool_icon-icons.com_67529.png" 
+<img height="100" width="100" src="https://raw.githubusercontent.com/elrerag/front-final-test-arceus/master/assets/img/Pokedex_tool_icon-icons.com_67529.png"
 alt="pokedex"   />
 
 La Pokédex, es una **enciclopedia portátil** de alta tecnología, que los entrenadores llevan consigo para registrar las fichas de todas las diversas especies Pokémon, con las que se encuentran durante su viaje como entrenadores.
@@ -16,7 +16,7 @@ Se le solicita a usted, que construya una página web, que permita a los usuario
 
 *Atte.*
 
-<img height="50"  src="https://raw.githubusercontent.com/elrerag/frontend-final-test/master/assets/img/nintendoLogo.png" 
+<img height="50"  src="https://raw.githubusercontent.com/elrerag/front-final-test-arceus/master/assets/img/nintendoLogo.png" 
 alt="pokedex"   />
 
 
