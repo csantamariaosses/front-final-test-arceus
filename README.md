@@ -1,4 +1,4 @@
-# frontend-final-test: ARCEUS TEAM
+# FRONTEND FINAL TEST - ARCEUS TEAM
 
 ## La Pokédex
 <img height="100" width="100" src="https://raw.githubusercontent.com/elrerag/front-final-test-arceus/master/assets/img/Pokedex_tool_icon-icons.com_67529.png"
