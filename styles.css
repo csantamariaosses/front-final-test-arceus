@@ -1,0 +1,106 @@
+body {
+    background-color: blue;
+    margin: 0px;
+    padding: 0px;
+    margin-bottom: 40px;
+}
+
+.titulo {
+    background-color: black;
+    color:white;    
+    text-align: center;
+    padding-top: 7px;
+    padding-bottom: 7px;
+}
+
+.centrado {
+    text-align: center;
+}
+
+#selectores {
+    padding-top: 5px;
+}
+
+#selectores #buscar {
+    
+}
+.menu {
+    margin-left: 0px;
+}
+
+.carousel {
+    padding: 20%;
+}
+
+.gifAnimado p {
+    margin-top: 20px;
+}
+
+
+#titulo-slide {
+    font-weight: bold;
+    text-align: center;
+}
+
+#myChart {
+    margin-top: 10px;
+}
+
+.unPokemon {
+    margin-top: 10px;
+    margin-bottom: 50px;
+}
+
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    body {
+        background: red;
+    }
+
+    .carousel img {
+        width: 300px;
+        height: 300px;
+    }
+}
+  
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    body {background: green;}
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    body {background: blue;}
+} 
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    body {background: orange;}
+} 
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    body {background: pink;}
+}
+  
+
+.tbl-datos {
+    border-color: black;
+    text-align: center;
+} 
+
+
+
+#footer-zone { 
+    height: 50px; 
+    background:black; 
+    color: whitesmoke;
+    width:100%; 
+    position:fixed; 
+    bottom:0px; 
+    left:0px; 
+    text-align: center;
+    padding: 10px;
+  }
