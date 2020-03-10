@@ -1,5 +1,5 @@
 body {
-    background-color: blue;
+    background-color:#cccccc;
     margin: 0px;
     padding: 0px;
     margin-bottom: 40px;
@@ -13,23 +13,51 @@ body {
     padding-bottom: 7px;
 }
 
+
+.lupa {
+    color:black;
+    padding-left: 10px;
+}
+
+
+.icon-home {
+    color:black;
+}
+
+
+#txtBuscar {
+    padding-right: 10px;
+    width: 30px;
+}
+
+
+
 .centrado {
     text-align: center;
+}
+
+
+#cbPokemon {
+    height:30px;
+    width:200px;
+    margin-left: 5px;
 }
 
 #selectores {
     padding-top: 5px;
 }
 
-#selectores #buscar {
-    
+#selectores a {
+    padding-left: 10px;
+    margin-left: 10px;
 }
+
 .menu {
     margin-left: 0px;
 }
 
 .carousel {
-    padding: 20%;
+    padding: 10%;
 }
 
 .gifAnimado p {
@@ -56,7 +84,7 @@ body {
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
     body {
-        background: red;
+        background:#cccccc;
     }
 
     .carousel img {
@@ -67,28 +95,29 @@ body {
   
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
-    body {background: green;}
+    body {background:#cccccc;}
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
-    body {background: blue;}
+    body { background:#cccccc;}
 } 
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
-    body {background: orange;}
+    body { background:#cccccc;}
 } 
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
-    body {background: pink;}
+    body {background:#cccccc;}
 }
   
 
 .tbl-datos {
     border-color: black;
     text-align: center;
+    border-radius: 25px;
 } 
 
 
@@ -103,4 +132,16 @@ body {
     left:0px; 
     text-align: center;
     padding: 10px;
+  }
+
+
+  .verde {
+      background-color: darkgreen;
+  }
+  .amarillo {
+    background-color: yellow;
+  }
+
+  .rojo {
+    background-color: red;
   }
