@@ -1,4 +1,5 @@
 $(document).ready(function () {
+
     llenaCbPokemon();
     $(".gifAnimado").show();
     $('.carousel').carousel();
@@ -169,7 +170,7 @@ function getSelectPokemon(sel) {
 
             //https://www.pokexperto.net/index2.php?seccion=nds/nationaldex/stats&pk=3
             data: {
-                labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
+                //labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
                 labels: statsLabel,
                 datasets: [{
                     label: '',
