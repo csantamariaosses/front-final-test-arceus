@@ -4,39 +4,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Desafio Pokemones</title>
+    <title>Pokédex</title>
     <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.no-icons.min.css"
         rel="stylesheet">
     <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="styles.css">
-
+    <link rel="shortcut icon" type="image/svg" href="pokebola.svg"/>
 </head>
 
 <body>
-    <div class="container-fluid titulo">
+    <div class="container-fluid titulo" style="background-color: #e3350d;">
+
         <div class="row">
             <div class="col-sm-12">
-                <h3>POKEMONES</h3> <h4> Arceus Team</h4>
+                <h3><img src="logo.png" height="100px"></h3> <h4> Arceus Team</h4>
             </div>
         </div>
     </div>
     
     <div class="container-fluid centrado" id="selectores">
         <div class="row">
-            <div class="col-xs-1 col-sm-3 col-md-3 col-lg-4">                
+            <div class="col-xs-1 col-sm-3 col-md-3 col-lg-4">  <span id="selectTypes"></span>               
             </div>
             <div class="col-xs-10 col-sm-6  col-md-6 col-lg-4">
                 <div class="input-group input-group-sm mb-3">
                     <input type="text" name="txtBuscar" id="txtBuscar" class="form-control"
-                        placeholder="Numero / Nombre">&nbsp;<a href="javascript:buscar();"><i
-                            class="icon-search icon-2x lupa"></i></a>
+                        placeholder="Nombre (presiona pokedex)">&nbsp;<input type="image" src="pokedex.png" id="pokeboton">
                 </div>
             </div>
-            <div class="col-xs-1 col-sm-3 col-md-3 col-lg-4">                
+            <div class="col-xs-1 col-sm-3 col-md-3 col-lg-4"> <span id="selectPokemon"></span></p>             
             </div>
         </div>
+
     </div>
 
     <div class="container-fluid menu">
@@ -44,13 +45,27 @@
             <div class="col-sm-2 col-md-2 col-lg-2">                
             </div>
             <div class="col-xs-12 col-sm-8  col-md-8 col-lg-8 centrado">
-                <p align="center"><a href="javascript:inicio();"><i class="icon-home icon-2x"></i> <span style="color:black">Home</span> </a>
-                <span id="selectPokemon"></span></p>
+                <p style="text-align:center"><a href="javascript:inicio();"><i class="icon-home icon-2x"></i> <span style="color:rgb(155, 155, 155)"><b>> Home</b></span> </a>
+              
             </div>
             <div class="col-sm-2 col-md-2 col-lg-2">                
             </div>
         </div>
     </div>
+
+
+    	<span id="tabla"><table id="tablaTipos" class="table table-dark">
+			<thead>
+              <tr>
+                <th scope="col"><3</th>
+                <th scope="col">Nombre</th>
+                <th scope="col">url</th>
+                <th scope="col">Accion</th>
+              </tr>
+            </thead>
+            <tbody id="cuerpoTabla">
+            </tbody>
+        </table></span>
 
     <div id="carouselExampleInterval" class="carousel slide" data-ride="carousel">
         <div class="carousel-inner">
@@ -97,16 +112,17 @@
         </div>
     </div>
 
-
     <div class="container">
         <div id="poke-container" class="ui cards">
         </div>
     </div>
+   
 
-<br>
+
 <!-- Footer -->
 <div id="footer-zone"> 
-    POKEMONES - Arceus Team
+    <p>POKEMONES - Arceus Team</p>
+   
 </div> 
   <!-- Footer -->
 
@@ -125,3 +141,4 @@
 </body>
 
 </html>
+
