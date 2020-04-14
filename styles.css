@@ -1,8 +1,9 @@
 body {
-    background-color:#cccccc;
+    background-color:#1f1f1f;
     margin: 0px;
     padding: 0px;
     margin-bottom: 40px;
+    font-style: all;
 }
 
 .titulo {
@@ -85,7 +86,7 @@ body {
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
     body {
-        background:#cccccc;
+        background:#1f1f1f;
     }
 
     .carousel img {
@@ -96,24 +97,22 @@ body {
   
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
-    body {background:#cccccc;}
+    body {background:#1f1f1f;}
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
-    body { background:#cccccc;}
+    body { background:#1f1f1f;}
 } 
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
-    body { background:#cccccc;}
+    body { background:#1f1f1f;}
 } 
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
-    body {background:#cccccc;}
-}
-  
+    body {background:#1f1f1f;}  
 
 .tbl-datos {
     border-color: black;
@@ -134,7 +133,10 @@ body {
     text-align: center;
     padding: 10px;
   }
+#footer-zone p {
+    color: whitesmoke;
 
+}
 
   .verde {
       background-color: darkgreen;
