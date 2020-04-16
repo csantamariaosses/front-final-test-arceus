@@ -324,8 +324,8 @@ function csFunction(){
             
             $('.carousel').hide();
             $(".gifAnimado").hide();
-            $("#poke-container").hide();
             $(".info-group").hide();
+            $("#poke-container").hide();
             $("#unPokemon").show();
             
         });
