@@ -15,6 +15,7 @@
 </head>
 
 <body>
+    <!--
     <div class="container-fluid titulo">
         <div class="row">
             <div class="col-sm-12">
@@ -22,6 +23,15 @@
             </div>
         </div>
     </div>
+-->
+    <div class="container-fluid titulo">
+        <div class="row">
+            <div class="col-sm-12">
+                <a href="javascript:inicio();"><img src="logo-pokemon.png" height="100" width="300"></a>
+                <a href="javascript:showCreditos();"><h4> Arceus Team</h4></a>
+            </div>
+        </div>
+    </div>    
     
     <div class="container-fluid centrado" id="selectores">
         <div class="row">
@@ -30,7 +40,7 @@
             <div class="col-xs-10 col-sm-6  col-md-6 col-lg-4">
                 <div class="input-group input-group-sm mb-3">
                     <input type="text" name="txtBuscar" id="txtBuscar" class="form-control"
-                        placeholder="Numero / Nombre">&nbsp;<a href="javascript:buscar();"><i
+                        placeholder="Numero / Nombre" onkeypress="csFunction()">&nbsp;<a href="javascript:buscar();"><i
                             class="icon-search icon-2x lupa"></i></a>
                 </div>
             </div>
@@ -103,10 +113,27 @@
         </div>
     </div>
 
+
+    <div class="container info-group">
+        <div id="poke-arceus-group" class="ui cards">
+            <marquee direction="up" width="300" height="300" scrollamount="4" scrolldelay="50" > 
+             <p>
+              <h3>Arceus Team</h3>
+              <h4>Camila Rojas</h4>
+              <h4>César Parra</h4>
+              <h4>Sebastián Zúñiga</h4>
+              <h4>Lukas Medina</h4>
+              <h4>Christopher Poblete</h4>
+              <h4>Gabriel Anguita</h4>
+              <h4>Carlos Santa María</h4>
+              </p>
+            </marquee>
+        </div>
+    </div>
 <br>
 <!-- Footer -->
 <div id="footer-zone"> 
-    POKEMONES - Arceus Team
+    POKEMONES - <a href="javascript:showCreditos();">Arceus Team</a>
 </div> 
   <!-- Footer -->
 
@@ -122,6 +149,7 @@
 
     <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
     <script src="pokemon.js"></script>
+
 </body>
 
 </html>

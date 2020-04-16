@@ -6,11 +6,16 @@ body {
 }
 
 .titulo {
-    background-color: black;
+    background-color:#f00;
     color:white;    
     text-align: center;
     padding-top: 7px;
     padding-bottom: 7px;
+}
+
+.titulo a {
+    text-decoration: none;
+    color:white;
 }
 
 
@@ -135,6 +140,9 @@ body {
     padding: 10px;
   }
 
+  #footer-zone a {
+      text-decoration: none;
+  }
 
   .verde {
       background-color: darkgreen;
@@ -178,3 +186,26 @@ body {
       -webkit-border-radius: 10px 10px 10px 10px;
       border: 0px solid #000000;
   }
+
+
+  .info-group {
+      width: 500px;
+      font-family: Arial;
+      font-size: 12px;
+      text-align: center;
+      background-color: black;
+      opacity: 0.9;
+  }
+
+  .info-group p {
+      text-align: center;
+  }
+
+  .info-group h3{
+      color:#ccc;
+  }
+
+  .info-group h4{
+    color:#808080;
+}
+  
