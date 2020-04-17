@@ -1,8 +1,10 @@
 $(document).ready(function () {
 
     llenaCbPokemon();
+    llenaCbTipos();
     $(".gifAnimado").show();
     $(".info-group").hide();
+    $("#tabla").hide();
     $('.carousel').carousel();
     $(".lupa").click(function () {
         var nombre = $("#txtBuscar").val();
@@ -92,7 +94,7 @@ $(document).ready(function () {
             $(".gifAnimado").hide();
             $("#poke-container").hide();
             $(".info-group").hide();
-            $("#unPokemon").show();
+            $(".unPokemon").show();
             
         });
     });
@@ -115,11 +117,14 @@ function inicio() {
     $('.carousel').show();
     $('.unPokemon').hide();
     $(".info-group").hide();
+    $('#tabla').hide();
 
 }
 
 function getSelectPokemon(sel) {
-    var nombre = sel.value;
+    
+    var nombre = sel;
+
     $.ajax({
             url: `https://pokeapi.co/api/v2/pokemon/${nombre}`,
             type: "get",
@@ -202,8 +207,9 @@ function getSelectPokemon(sel) {
         $(".gifAnimado").hide();
         $(".info-group").hide();
         $("#poke-container").hide();
-        $("#unPokemon").show();
-
+        $("#tabla").hide();
+        $(".unPokemon").show();
+        
     });
 }
 
@@ -213,8 +219,8 @@ function llenaCbPokemon(){
         url: "https://pokeapi.co/api/v2/pokemon", success: function (result) {
         var count = result.count
         var resultados = result.results
-        var combo = `<select name='cbPokemon' id='cbPokemon' onChange="getSelectPokemon(this)">`;
-        combo += "<option value='0'>Pokemon</option>";
+        var combo = `<select name='cbPokemon' id='cbPokemon' onChange="getSelectPokemon(this.value)">`;
+        combo += "<option value='0'>Browse by Name</option>";
 
         var imagen = "";
         resultados.forEach(element => {
@@ -326,7 +332,8 @@ function csFunction(){
             $(".gifAnimado").hide();
             $(".info-group").hide();
             $("#poke-container").hide();
-            $("#unPokemon").show();
+            $("#tabla").hide();
+            $(".unPokemon").show();
             
         });
     }
@@ -336,6 +343,76 @@ function showCreditos(){
     $('.carousel').hide();
     $(".gifAnimado").hide();
     $("#poke-container").hide();
-    $("#unPokemon").hide();
+    $(".unPokemon").hide();
+    $("#tabla").hide();
     $(".info-group").show();
+    
+}
+
+
+function llenaCbTipos(){
+    $.ajax({
+        url: "https://pokeapi.co/api/v2/type", success: function (result) {
+       
+        var resultados = result.results
+        var combo = `<select name='cbTipos' id='cbTipos' onChange="getSelectTipos(this)">`;
+        combo += "<option value='0'>Browse by Type</option>";
+
+        var imagen = "";
+        resultados.forEach(element => {
+            combo += "<option value='" + element.name + "'>" + element.name + "</option>";
+            
+        });
+        combo += "</option>";
+        $('#selectTypes').html(combo);
+        document.getElementById('selectTypes').innerHTML = combo;
+        $("#selectTypes").show();             
+        }
+    });
+}
+
+
+
+
+
+
+const URL1 = 'https://pokeapi.co/api/v2/type/';
+
+function getSelectTipos(sel) {
+    var nombreTipo = sel.value;
+    UrlTipo = URL1+nombreTipo
+    fetch(UrlTipo, {method: 'GET'})
+    .then( response => {
+    return response.json()
+    })
+    .then( respuesta => respuesta.pokemon )
+    .then( listaPokemones => {
+    pokemoneHTML = "";
+    listaPokemones.slice(0,20).forEach( (pokemon) => escribeTabla(pokemon.pokemon) );
+    document.getElementById("cuerpoTabla").innerHTML = pokemoneHTML;
+
+    })
+    $("#tabla").show();
+    $('.carousel').hide();
+    $(".gifAnimado").hide();
+    $("#poke-container").hide();
+    $(".unPokemon").hide();
+}
+
+
+
+const escribeTabla = (pokemon) => {
+            
+            var pokeUrlSplit = pokemon.url.split("/");
+            var pokeId = pokeUrlSplit[pokeUrlSplit.length - 2]
+            console.log(pokeId)
+        
+            pokemoneHTML += `<tr>
+                            <th><a href="javascript:getSelectPokemon('${pokemon.name}');"><img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${pokeId}.png"></a></th>
+                            <td> ${pokemon.name} </td>
+                            <td> ${pokemon.url}</td>
+                            <td><button class="btn text-light" onclick="getSelectPokemon('${pokemon.name}')">'${pokemon.name}'</button></td></tr>`
+   
+           
+
 }
