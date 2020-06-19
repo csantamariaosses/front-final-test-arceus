@@ -149,7 +149,7 @@ const escribeTabla = (pokemon) => {
 }
 
 
-function showCardPokemon( nombreId) {
+function showCardPokemon( nombre) {
     $.ajax({
         url: `https://pokeapi.co/api/v2/pokemon/${nombre}`,
         type: "get",
