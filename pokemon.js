@@ -233,6 +233,7 @@ function showCardPokemon( nombre) {
         $(".gifAnimado").hide();
         $("#poke-container").hide();
         $(".info-group").hide();
+        $("#tabla").hide();
         $(".unPokemon").show();
         
     });
