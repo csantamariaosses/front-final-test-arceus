@@ -142,7 +142,7 @@ const escribeTabla = (pokemon) => {
             console.log(pokeId)
         
             pokemoneHTML += `<tr>
-                            <th><a href="javascript:getSelectPokemon('${pokemon.name}');"><img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${pokeId}.png"></a></th>
+                            <th><a href="javascript:showCardPokemon('${pokemon.name}');"><img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${pokeId}.png"></a></th>
                             <td> ${pokemon.name} </td>
                             <td> ${pokemon.url}</td>
                             <td><button class="btn text-light" onclick="getSelectPokemon('${pokemon.name}')">'${pokemon.name}'</button></td></tr>`
